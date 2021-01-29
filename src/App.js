@@ -1,11 +1,13 @@
 import React from "react";
 // Import pages
 import AboutSection from "./Pages/AboutSection";
+// import global style
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
 	return (
 		<div>
-			<h1>FILM</h1>
+			<GlobalStyle />
 			<AboutSection />
 		</div>
 	);
