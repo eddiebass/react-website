@@ -9,6 +9,8 @@ import Nav from "./components/Nav";
 import GlobalStyle from "./components/GlobalStyle";
 //Import from react-router-dom
 import { Switch, Route } from "react-router-dom";
+//import moviedetail (useHistory)
+import MovieDetial from "./Pages/MovieDetail";
 
 function App() {
 	return (
@@ -19,8 +21,11 @@ function App() {
 				<Route path="/" exact>
 					<AboutSection />
 				</Route>
-				<Route path="/work">
+				<Route path="/work" exact>
 					<OurWork />
+				</Route>
+				<Route path="/work/:id">
+					<MovieDetial />
 				</Route>
 				<Route path="/contact">
 					<ContactUs />
